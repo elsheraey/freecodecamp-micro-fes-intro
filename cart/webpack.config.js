@@ -3,6 +3,8 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
+  devtool: "eval-cheap-source-map",
+
   output: {
     publicPath: "http://localhost:3002/",
   },
