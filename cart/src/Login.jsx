@@ -14,8 +14,7 @@ export default function Login() {
   return (
     <>
       <span onClick={() => setShowLogin(!showLogin)}>
-        {/* NOTE: The icon is not working for some reason */}
-        <i className="ri-fingerprint-line text-2xl" id="showlogin">Login</i>
+        <i className="ri-fingerprint-line text-2xl" id="showlogin"></i>
       </span>
       
       {showLogin && (
@@ -24,7 +23,7 @@ export default function Login() {
           style={{
             width: 300,
             top: "2rem",
-            // left: -250,
+            left: -250,
           }}
         >
           <input
